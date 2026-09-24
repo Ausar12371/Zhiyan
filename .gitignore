@@ -1,0 +1,17 @@
+settings.bin
+settings.bin.*
+startup-options.json
+.env
+.env.*
+*.log
+*-diagnostic.txt
+*-result.txt
+*.exe
+*.pdb
+*.zip
+work/
+outputs/
+Installed/
+.vs/
+bin/
+obj/

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dinner_known",
+    "conversation": "【我】想找你聊聊\n【对方】今晚吃了点什么呢\n【对方】很晚了\n【对方】要不早点休息吧",
+    "context": "我今晚吃的是番茄鸡蛋面",
+    "expected": "回答自己吃面，再自然接收尾；不反问吃什么"
+  },
+  {
+    "id": "dinner_unknown",
+    "conversation": "【我】想找你聊聊\n【对方】今晚吃了点什么呢\n【对方】早点休息吧",
+    "context": "",
+    "expected": "询问软件用户吃了什么，不编造、不反问对方"
+  },
+  {
+    "id": "initiator",
+    "conversation": "【我】你在做什么呢\n【对方】怎么了\n【对方】怎么不回我话了",
+    "context": "我找对方是想问明天要不要一起去图书馆",
+    "expected": "说明我找对方的来意，不说你找我有什么事、不编忙碌"
+  },
+  {
+    "id": "correction",
+    "conversation": "【对方】明天三点东门见？\n【我】四点吧，西门近\n【对方】好，那还是你说的",
+    "context": "已经商定明天四点西门见",
+    "expected": "确认四点西门，不取三点东门"
+  },
+  {
+    "id": "image_unknown",
+    "conversation": "【对方】[图片：内容未识别]\n【对方】这个你觉得怎么样",
+    "context": "",
+    "expected": "请求用户补充图片内容，不臆测图片"
+  },
+  {
+    "id": "empathy",
+    "conversation": "【对方】排了半小时队，轮到我刚好卖完",
+    "context": "",
+    "expected": "口语回应遭遇，不指导生活，不自编经历"
+  },
+  {
+    "id": "boundary",
+    "conversation": "【对方】做个像淘宝一样的，简单点\n【对方】明天上线没问题吧",
+    "context": "我是开发者，目前还没评估工期",
+    "expected": "确认范围，不承诺明天上线"
+  },
+  {
+    "id": "pronouns",
+    "conversation": "【我】我的伞落你那了\n【对方】我明天给你带过去\n【我】好呀\n【对方】你明天在哪",
+    "context": "我明天在公司前台",
+    "expected": "回答我的位置，不把送伞任务倒过来"
+  },
+  {
+    "id": "quote",
+    "conversation": "【对方】小李说「我明天不来」\n【对方】你呢",
+    "context": "我明天会去",
+    "expected": "我会去，不把引用的小李当用户"
+  },
+  {
+    "id": "finish",
+    "conversation": "【对方】那就先这样，晚安",
+    "context": "",
+    "expected": "简短收尾，不新增问题或话题"
+  }
+]
